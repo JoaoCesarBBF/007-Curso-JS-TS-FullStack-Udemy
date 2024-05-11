@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Análise de Numero</title>
+</head>
+<body>
+    
+    <script>
+        let num = Number(prompt('Bota um número ae menolo!'));
+        window.document.body.innerHTML = `<p>O número digitado foi <strong>${num}</strong></p>`;
+        window.document.body.innerHTML += `<p>Raiz quadrada: ${Math.sqrt(num)} </p>`;
+        window.document.body.innerHTML += `<p>${num} ${(Number.isInteger(num) ? 'é' : 'não é')} inteiro.</p>`;
+        window.document.body.innerHTML += `<p>${(Number.isNaN(num)) ? 'É' : 'Não é'} um NaN</p>`;
+        window.document.body.innerHTML += `<p>Arredondado para baixo: ${Math.floor(num)} </p>`;
+        window.document.body.innerHTML += `<p>Arredondado para cima: ${Math.ceil(num)} </p>`;
+        window.document.body.innerHTML += `<p>Com duas casas decimais: ${num.toFixed(2)} </p>`;
+    </script>
+</body>
+</html>
