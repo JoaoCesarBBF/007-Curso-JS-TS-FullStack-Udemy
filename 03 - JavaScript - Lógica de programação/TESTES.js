@@ -16,3 +16,13 @@
 // console.log(x)
 // console.log(y)
 
+const conta = function(operador, acumulador, ...numeros) {
+    for (let numero of numeros) {
+        if (operador === '+') acumulador += numero;
+        if (operador === '-') acumulador -= numero;
+        if (operador === '*') acumulador *= numero;
+        if (operador === '/') acumulador /= numero;
+    }
+    console.log(acumulador);
+};
+conta('+',2,3,4,5)
