@@ -22,12 +22,21 @@ let cpfLimpo = cpf3.replace(/\D+/g,'')
 cpfArray = Array.from(cpfLimpo);
 
 let i=10
+
+
+
+
 let soma1 = (cpfArray.filter((valor,indice) =>{
     if (indice >= 9) return;
     return valor
 }).map(x =>{
     return x*i--
 })).reduce((ac,val) => ac + Number(val),0)
+
+
+
+
+
 
 if (((11 - (soma1 % 11))>9?0:(11 - (soma1 % 11))) === Number(cpfLimpo[9])) console.log(`Primeiro dígito validado: ${cpfLimpo[9]}`);
 

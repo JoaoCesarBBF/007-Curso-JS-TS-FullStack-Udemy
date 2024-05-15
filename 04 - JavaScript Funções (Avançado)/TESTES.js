@@ -26,3 +26,5 @@ const conta = function(operador, acumulador, ...numeros) {
     console.log(acumulador);
 };
 conta('+',2,3,4,5)
+
+

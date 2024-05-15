@@ -4,6 +4,12 @@
 const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7,11, 15, 22, 27]
 
 
+const leg = numeros.reduce(function (acu,x,y,z){
+    return acu>x
+})
+ console.log(leg)
+
+
 const numerosPares = numeros.filter(x => {
     return (x % 2 === 0)
 }).map(x => {
