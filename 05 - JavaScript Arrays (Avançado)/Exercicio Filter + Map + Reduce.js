@@ -4,6 +4,13 @@
 const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7,11, 15, 22, 27]
 
 
+console.log('asdasd')
+numeros2 = numeros.map(x=> x*2).map(console.log)
+
+
+
+console.log(numeros2)
+
 const leg = numeros.reduce(function (acu,x,y,z){
     return acu>x
 })
